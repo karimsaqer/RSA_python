@@ -13,7 +13,7 @@ def analyze_different_key_sizes(length_of_bits):
         key_sizes.append(x)
         start_time = time.time()
         public_key, private_key = common.generate_keypair(x)
-        plaintext = "Hello, world!"
+        plaintext = "My name is karim" 
         ciphertext = RSA.encrypt(plaintext, public_key)
         elapsed_time = time.time() - start_time
         encryption_time.append(elapsed_time)
