@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Some new functions
 
-
+# To know if it is prime or not
 def is_prime(n):
     if n < 2:
         return False
@@ -20,12 +20,14 @@ def is_prime(n):
         i += 6
     return True
 
+# Get the prime number
 def generate_prime(bits):
     while True:
         candidate = random.getrandbits(bits)
         if is_prime(candidate):
             return candidate
         
+# Generate the pair input of bits 
 def generate_keypair(bits):
     p = generate_prime(bits // 2)
     q = generate_prime(bits // 2)
@@ -61,6 +63,7 @@ def analyze_different_key_sizes(length_of_bits):
 # The function call
 key_sizes , encryption_time = analyze_different_key_sizes([50, 60, 100, 120])
 
+# plotting 
 plt.plot(key_sizes, encryption_time)
 plt.xlabel('Key size (bits)')
 plt.ylabel('Encryption time (seconds)')
