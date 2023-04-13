@@ -1,6 +1,6 @@
 import socket
 import RSA
-import test
+import generate
 import pickle
 
 # Define the IP address and port for the socket
@@ -10,7 +10,7 @@ PORT = 8000
 # Define the private and public keys for the socket
 # private = 0;
 # public = 0;
-public_key= test.get_public_key()
+public_key= generate.get_public_key()
 print(public_key)
 
 

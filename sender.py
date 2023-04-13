@@ -1,6 +1,6 @@
 import socket
 import RSA
-import test
+import generate
 
 # Define the IP address and port for the socket
 HOST = '127.0.0.1'
@@ -10,7 +10,7 @@ PORT = 8000
 # Define the private and public keys for the socket
 # private = 0;
 # public = 0;
-private_key = test.get_private_key()
+private_key = generate.get_private_key()
 print(private_key)
 
 

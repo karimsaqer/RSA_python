@@ -1,12 +1,12 @@
 import socket
 import threading
 import RSA
-import test
+import generate
 
 
 
-public_key= test.get_public_key()
-private_key = test.get_private_key()
+public_key= generate.get_public_key()
+private_key = generate.get_private_key()
 
 # create a socket object
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
