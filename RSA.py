@@ -5,27 +5,6 @@ from math import gcd
 # public_one = 0
 # public_two = 0
 
-def listToString(L): 
-        text = "" 
-        # traverse in the string  
-        for char in L: 
-            text += char  
-        # return string  
-        return text 
-
-def ConvertToStr(n):
-    res = ""
-    while n > 0:
-        res += chr(n % 256)
-        n //= 256
-    return res[::-1]
-
-def ConvertToInt(message_str):
-    res = 0
-    for i in range(len(message_str)):
-        res = res * 256 + ord(message_str[i])
-    return res
-
 
 # Get Modular inverses
 def mod_inverse(a, m):
