@@ -15,4 +15,5 @@ run server.py then client_A.py and client_B.py
 run attacks.py
 
 # Efficiency: encryption time VS key length
+![image](https://github.com/karimsaqer/RSA_python/blob/main/time.jpg)
 
